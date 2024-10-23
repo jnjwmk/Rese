@@ -31,6 +31,13 @@
 }
 
 .register-btn {
-    margin-left: 105px;
+    width: 80px;
+    height: 30px;
+    margin-left: 190px;
     margin-top: 25px;
+    margin-bottom: 10px;
+    background-color: blue;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
 }

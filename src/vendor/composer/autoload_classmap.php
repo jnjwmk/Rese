@@ -6,12 +6,19 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Actions\\Fortify\\CreateNewUser' => $baseDir . '/app/Actions/Fortify/CreateNewUser.php',
+    'App\\Actions\\Fortify\\PasswordValidationRules' => $baseDir . '/app/Actions/Fortify/PasswordValidationRules.php',
+    'App\\Actions\\Fortify\\ResetUserPassword' => $baseDir . '/app/Actions/Fortify/ResetUserPassword.php',
+    'App\\Actions\\Fortify\\UpdateUserPassword' => $baseDir . '/app/Actions/Fortify/UpdateUserPassword.php',
+    'App\\Actions\\Fortify\\UpdateUserProfileInformation' => $baseDir . '/app/Actions/Fortify/UpdateUserProfileInformation.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\RestaurantController' => $baseDir . '/app/Http/Controllers/RestaurantController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
+    'App\\Http\\Middleware\\LogoutMiddleware' => $baseDir . '/app/Http/Middleware/LogoutMiddleware.php',
     'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => $baseDir . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
     'App\\Http\\Middleware\\RedirectIfAuthenticated' => $baseDir . '/app/Http/Middleware/RedirectIfAuthenticated.php',
     'App\\Http\\Middleware\\TrimStrings' => $baseDir . '/app/Http/Middleware/TrimStrings.php',
@@ -28,6 +35,7 @@ return array(
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
+    'App\\Providers\\FortifyServiceProvider' => $baseDir . '/app/Providers/FortifyServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'Asm89\\Stack\\Cors' => $vendorDir . '/asm89/stack-cors/src/Cors.php',
     'Asm89\\Stack\\CorsService' => $vendorDir . '/asm89/stack-cors/src/CorsService.php',

@@ -14,6 +14,8 @@
     <div class="rese">
         <header class="header">
             <h1 class="header_heading">Rese</h1>
+            @yield('nav')
+
         </header>
 
         <div class="main">

@@ -5,11 +5,16 @@ body {
     background-color: #e6e6e6a4;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header_heading {
     color: blue;
     margin-left: 150px;
 }
 
 .main {
-    
+    background-color: #e6e6e6a4;
 }
