@@ -1,0 +1,69 @@
+
+.areas_select,
+.genres_select {
+    margin-top: 20px;
+
+}
+
+.main,
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+.restaurant {
+    height: 300px;
+    box-shadow: 3px 3px 2px gray;
+    margin-bottom: 20px;
+
+
+
+}
+
+
+.restaurant-img img {
+    width: 300px;
+    height: 170px;
+}
+
+.restaurant-text {
+    height: 100px;
+
+}
+
+h3 {
+    margin-left:10px;
+    margin-bottom: -5px;
+}
+
+.restaurant-area-list,
+.restaurant-genre-list{
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.restaurant-genre{
+    margin-right: 50px;
+}
+
+.detail-btn {
+    background-color: blue;
+    color:#fff;
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+    width: 90px;
+    padding: 10px 5px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+
+}

@@ -20,3 +20,4 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/', [RestaurantController::class, 'index']);
+Route::get('/detail',[RestaurantController::class,'detail'])->name('detail');

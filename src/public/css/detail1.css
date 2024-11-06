@@ -1,0 +1,21 @@
+.detail_reservation{
+    display: flex;
+}
+.left-detail,
+.right-detail{
+    flex: 1;
+}
+
+.detail-img img {
+    width: 550px;
+    height: 350px;
+}
+
+.restaurant-area-detail,
+.restaurant-genre-detail {
+    display: inline-block;
+}
+
+.restaurant-detail {
+    display: inline-block;
+}

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/shop_all1.css')}}">
+<link rel="stylesheet" href="{{ asset('css/shop_all.css')}}">
 @endsection('css')
 
 @section('nav')
@@ -56,10 +56,10 @@
 
         <div class="restaurant-text">
             <h3>{{ $restaurant -> name }}</h3>
-            <p class="restaurant-area">#{{ $restaurant->area->name}}</p>
-            <p class="restaurant-genre">#{{ $restaurant->genre->name}}</p>
+            <p class="restaurant-area-list">#{{ $restaurant->area->name}}</p>
+            <p class="restaurant-genre-list">#{{ $restaurant->genre->name}}</p>
 
-            <a class="detail-btn" href="{{ route('')}}">詳しくみる</a>
+            <a class="detail-btn" href="{{ route('detail') }}?id={{ $restaurant ->id}}">詳しくみる</a>
 
         </div>
     </div>

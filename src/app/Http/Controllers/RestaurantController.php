@@ -18,6 +18,17 @@ class RestaurantController extends Controller
         return view('shop_all',compact('areas','genres','restaurants'));
     }
 
+    public function detail(Request $request)
+    {
+        $restaurantID = $request->query('id');
+
+
+        $restaurant = Restaurant::find($restaurantID);
+
+        return view('detail',['restaurant' => $restaurant]);
+
+    }
+
 
 
 

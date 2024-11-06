@@ -12,9 +12,9 @@
         @csrf
         <div class="register-form__group">
             <label for="username"></label>
-            <input class="register-form__input" type="text" id="username" name="name" value="{{ old ('name')}}"
+            <input class="register-form__input" type="text" id="username" name="username" value="{{ old ('name')}}"
                 placeholder="Username">
-            @error ('name')
+            @error ('username')
             {{ $message }}
             @enderror
         </div>
@@ -32,6 +32,11 @@
             @error ('password')
             {{ $message }}
             @enderror
+        </div>
+        <div class="register-form__group">
+            <label for="password"></label>
+            <input class="register-form__input" type="password" id="password_confirmation" name="password_confirmation"
+                placeholder="PasswordConfirmation">
         </div>
 
         <input class="register-btn" type="submit" value="登録">
